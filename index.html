@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/new logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="#home">home</a> </li>
+                    <li><a href="#about">about</a> </li>
+                    <li><a href="#rooms">rooms</a> </li>
+                    <li><a href="#pages">pages</a> </li>
+                    <li><a href="#news">news</a> </li>
+                    <li><a href="#contact">contact</a> </li>
+                    <li> <i class="fa fa-search"></i> </li>
+                    <li> <button class="primary-btn">BOOK NOW</button> </li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/tittle image.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>your next space.
+                        </p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/tittle image 2.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Stay once, carry memories forever.
+                        </p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/tittle image 3.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Because comfort is more important.
+                        </p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+
+
+    <section class="book">
+        <div class="container flex_space">
+            <div class="text">
+                <h1> <span>Book </span> Your Rooms </h1>
+            </div>
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Araival Date">
+                    <input type="date" placeholder="Departure Date">
+                    <input type="number" placeholder="Adults">
+                    <input type="number" placeholder="Childern">
+                    <input type="submit" value="CHECK AVAILABILITY">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>WELCOME</h1>
+                    <h2>Holiday Inn</h2>
+                </div>
+                <p>
+                    Welcome to Holyday Inn, where each stay is a celebration. Our strategically located hotel offers diverse accommodations, from standard to luxurious suites. Indulge in themed dining, relax in our fitness center, and host events in versatile spaces. Committed
+                    to sustainability, we provide top-notch services 24/7. Experience hospitality and lasting memories at Holyday Inn.</p>
+                <button class="primary-btn">ABOUT US</button>
+            </div>
+            <div class="right">
+                <img src="images/gallery4-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>2500</h1>
+                <hr>
+                <span>Customer</span>
+            </div>
+            <div class="box">
+                <h1>1250</h1>
+                <hr>
+                <span>Happy Customer</span>
+            </div>
+            <div class="box">
+                <h1>150</h1>
+                <hr>
+                <span>Expert Technicians</span>
+            </div>
+            <div class="box">
+                <h1>300+</h1>
+                <hr>
+                <span>Staffs</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="rooms">
+        <div class="container top">
+            <div class="heading">
+                <h1>EXPOLRE</h1>
+                <h2>Our Rooms</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                </p>
+            </div>
+
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Serenity within walls, where peace whispers in luxurious ambiance.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 4999 <span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Royal Suite</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>A symphony of opulence, where refined sophistication dances with lavishness.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 3999<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Platinum Grandeur Suite</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Regal splendor unfolds in every corner, embracing you with grandeur.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3> RS 2999<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Elite Horizon Residence</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>In each moment, experience the everlasting allure of sumptuous indulgence.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 5999<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-5.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Presidential Retreat</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Ascend to a realm where comfort harmonizes with panoramic perfection.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 9999<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-6.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Grand Deluxe Oasis</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>At the pinnacle of luxury, experience opulent living beyond compare.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 6999<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-7.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Opulent Penthouse</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Where celestial comfort meets earthly elegance, your refuge awaits.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 5888<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/room-8.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Premier Spa Sanctuary</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>In the plush embrace of luxury, behold a horizon of unmatched sophistication.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>RS 5666<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel1').owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: true,
+            dots: false,
+            navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 10,
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+
+
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+                <h1>PHOTOS</h1>
+                <h2>Our Gallery</h2>
+                <p>Captivating visuals, elegant interiors, breathtaking views, luxury ambiance, memorable experiences.
+            </div>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="img">
+                        <img src="images/resort gallery 1.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"> </span>
+
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="images/resort gallery 2.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"> </span>
+
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="images/resort gallery 3.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"> </span>
+
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="images/resort gallery 4.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"> </span>
+
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="images/resort gallery 5.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"> </span>
+
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="images/resort gallery 6.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"> </span>
+
+                    </div>
+                </div>
+
+    </section>
+
+
+    <script>
+        $('.owl-carousel1').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 800,
+            autoplayHoverPause: true,
+            navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 4,
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+
+
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h1>SERVICES</h1>
+                <h2>Our Services</h2>
+                <p>
+                    Luxury accommodations, personalized service, dining excellence, event spaces, wellness amenities.
+            </div>
+
+
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            <h3>Delious Food</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <h3>Fintness</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Inhouse Restaurant</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-spa"></i>
+                            <h3>Beauty Spa</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/our services.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="Customer top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Renowned for decades of expertise, our hotel boasts award-winning service and a commitment to unparalleled quality. Globally recognized, we prioritize sustainability, implement innovative solutions, and cultivate personalized guest
+                        care. Our industry-leading partnerships underscore our dedication to excellence, ensuring a memorable and luxurious experience for every guest.</p>
+                    <h3>Our credentials</h3>
+
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                        Dedicated to creating unparalleled guest experiences, our mission is to be a beacon of hospitality excellence. We commit to delivering exceptional service, embracing sustainable practices, and fostering a warm, inclusive atmosphere. Striving for innovation,
+                        we aim to redefine luxury, ensuring each guest leaves with cherished memories and a desire to return.</p>
+                    <h3>Our mission</h3>
+
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                        Our vision for hotels is to redefine the essence of hospitality. We aim to be pioneers in delivering extraordinary experiences, seamlessly blending innovation with tradition. Striving for excellence, we envision our establishments as epitomes of luxury,
+                        sustainability, and cultural immersion, leaving an indelible mark on the global hospitality landscape.</p>
+                    <h3>Our Vission</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1,
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+
+    <section class="news top rooms">
+        <div class="container">
+            <div class="heading">
+                <h1>NEWS</h1>
+                <h2>Our News</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            </div>
+
+
+            <div class="content flex">
+                <div class="left grid2">
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/blog-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2></h2>
+                            <div class="admin flex">
+                                <i class="fa fa-user"></i>
+                                <label>Admin</label>
+                                <i class="fa fa-heart"></i>
+                                <label>500</label>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                            <p>
+                                Stay updated with our hotel news section for the latest happenings, exclusive offers, and exciting events. Discover new amenities, learn about upcoming renovations, and explore unique experiences crafted for our guests.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/blog-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2></h2>
+                            <div class="admin flex">
+                                <i class="fa fa-user"></i>
+                                <label>Admin</label>
+                                <i class="fa fa-heart"></i>
+                                <label>500</label>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                            <p>Dive into the heartbeat of our hotel through our news section, where we share behind-the-scenes insights, spotlight team accomplishments, and showcase guest testimonials., stay connected to the pulse of our dynamic hospitality
+                                journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/blog-s1.png" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>Latest Offerings</h2>
+                            <p>Explore our newest promotions, packages, and exclusive deals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/blog-s2.png" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>In the Spotlight</h2>
+                            <p>Discover behind-the-scenes stories, team achievements, and guest testimonials.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/blog-s3.png" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>What's Happening</h2>
+                            <p>Stay informed about upcoming events, renovations, and exciting developments at our hotel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newsletter mtop">
+        <div class="container flex_space">
+            <h1>Subscribe to Our Newsletter</h1>
+            <input type="text" placeholder="Your Email">
+            <input type="text" value="Subscribe">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/FOOTER LOGO.png" alt="">
+                <p>
+                    Experience the epitome of celebration at Holyday Inn, strategically located to offer a perfect blend of luxury and convenience. Our accommodations range from standard rooms to lavish suites, ensuring a comfortable stay for all. Delight your palate with
+                    our diverse culinary offerings and unwind in our state-of-the-art fitness center. Holyday Inn isn't just a place to stay; it's a venue for events, complemented by eco-friendly practices and top-notch services. Discover the art of hospitality
+                    at Holyday Inn, where every moment is crafted for lasting memories.</p>
+
+                <div class="icon">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <li>Company History</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Contact Us</h2>
+
+                <i class="fa fa-location-dot"></i>
+                <label>346, Thudiyalur Rd, Saravanampatti, Coimbatore, Tamil Nadu 641035</label> <br>
+                <i class="fa fa-phone"></i>
+                <label>+91 987456321</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>holidayinn@yours.com</label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright 2023 by Aj</p>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
